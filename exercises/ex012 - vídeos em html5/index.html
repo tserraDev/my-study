@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+
+<header>
+    <a href="../../index.html" rel="prev">
+    <abbr title="back..."><img src="../../imagens/tsleft50.png" alt="BACK!"></abbr>
+    </a>
+</header>
+
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/punpun.webm" width="800" height="450" poster="imagens/punpun-thumb.png" muted autoplay controls loop></video>
+    <!-- O autoplay no Chrome ele ainda funciona desde que o vídeo esteja sem som, add a tag muted antes do autoplay -->
+    
+    <h1>Outras versões convertidas:</h1>
+    <video width="700" height="400" poster="imagens/punpun-thumb.png" controls loop>
+        
+        <source src="midia/punpun.mp4" type="video/mp4">
+        
+        <source src="midia/punpun.m4v" type="video/mp4">
+        
+        <source src="midia/punpun.webm" type="video/webm">
+        
+        <source src="midia/punpun.ogv" type="video/ogg">
+        
+        <p>seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://youtu.be/BsQysQwqjMI?si=gM_TDveKZMVuq6px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>

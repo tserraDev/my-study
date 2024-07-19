@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<header>
+    <a href="../../index.html" rel="prev">
+    <abbr title="back..."><img src="../../imagens/tsleft50.png" alt="BACK!"></abbr>
+    </a>
+</header>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador <strong>(pressione a tecla F12)</strong>.</p>
+
+    <picture> <!-- esta tag tem a intenção de avisar ao code que vai aparecer uma imagem -->
+        <source media="(max-width: 750px)" srcset="imagens/tscostas300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/tsright700.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/tsfront1000.png" type="image/png">
+        <img src="imagens/tsfront1000.png" alt="Imagem flexível" style="widht: 100%; max-width: 1050px;">
+        <!-- A ORDEM SEMPRE SERÁ DO MENOR AO MAIOR! -->
+
+        <h1>Reproduzindo Àudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="mídia/yun-li.mp3" controls></audio>
+
+        <!-- Segunda forma -->
+        <audio preload="metadata">
+            <source src="mídia/yun-li.mp3" type="audio/mpeg">
+            <source src="mídia/yun-li.ogg" type="audio/ogg">
+            <source src="mídia/yun-li.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="mídia/yun-li.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        </audio>
+        <!-- MP3 WAV OGG -->
+    </picture>
+</body>
+
+</html>

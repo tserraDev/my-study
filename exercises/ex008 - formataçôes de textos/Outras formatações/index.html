@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<header>
+    <a href="../index.html" rel="prev">
+    <abbr title="back..."><img src="../../../imagens/tsleft50.png" alt="BACK!"></abbr>
+    </a>
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+    
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code> <!-- a tag code serve para deixar cada tecla com a ocupação de espaço igualmente, ex.: "g" é maior q "t"--> é escrito em lingugem JavaScript
+    </p>
+    
+    <pre><!--tag pre permite fazer qualquer quebra q vc escrever dentro dela-->
+        <code><!--shift + tab para diminuir o recuo do codigo-->
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')  
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+        </code><!--isto é python-->
+    </pre>
+    
+    <h2>Citações</h2>
+    <p>
+        Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q>
+    </p><!--use a tag q para criar aspas e um sentido de citação (semântica)-->
+    
+    <h2>Citações completas</h2>
+    <p>
+        Segundo Jeff Noble, no seu livro HTML para leigos:
+    </p>
+        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/jwN1uAAACAAJ?hl=pt-BR">
+        sla mó preguiça de escrever
+        </blockquote>
+    
+    <h2>Abreviações</h2>
+    <p>
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr><!--a tag abbr é muito útil para explicar abreviações--> e <abbr title="Cascading Style Sheets">CSS</abbr>, mt foda maluco
+    </p>
+    
+    <h2>Texto Invertido</h2>
+    <p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    </p>
+</body>
+
+</html>
